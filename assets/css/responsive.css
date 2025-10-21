@@ -1,0 +1,56 @@
+/* Responsive adjustments */
+
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 2.2em;
+  }
+  .hero h2 {
+    font-size: 1em;
+  }
+  .header-contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 40px 15px;
+  }
+
+  .hero {
+    padding: 100px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8em;
+  }
+  .hero p {
+    font-size: 1em;
+  }
+  .btn-primary,
+  .btn-outline {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,254 @@
+:root {
+  --primary-blue: #00ADEF;
+  --dark-bg: #0b0b0b;
+  --light-text: #d9d9d9;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--dark-bg);
+  color: var(--light-text);
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-blue);
+  margin-top: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+.site-header {
+  background: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.header-top .logo img {
+  max-width: 280px;
+  height: auto;
+}
+
+.header-contact a {
+  color: var(--light-text);
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.header-contact a:hover {
+  color: var(--primary-blue);
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.main-nav a {
+  color: var(--white);
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.main-nav a:hover {
+  color: var(--primary-blue);
+}
+
+/* HERO */
+.hero {
+  background: url('../images/hero-truck.jpeg') center/cover no-repeat;
+  color: var(--white);
+  text-align: center;
+  padding: 140px 20px;
+}
+
+.hero h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.hero-buttons a {
+  margin: 5px;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: var(--primary-blue);
+  color: var(--white);
+  padding: 14px 28px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 15px var(--primary-blue);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid var(--primary-blue);
+  color: var(--primary-blue);
+  padding: 12px 26px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: var(--primary-blue);
+  color: var(--white);
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+}
+
+.section-subtitle {
+  color: var(--primary-blue);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.about-image img {
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.service-card {
+  background: #111;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.service-card img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  color: var(--primary-blue);
+}
+
+/* QUOTE FORM */
+.quote {
+  background: #111;
+  color: var(--white);
+}
+
+.quote h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.quote-form {
+  background: #000;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.quote-form input,
+.quote-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #222;
+  border-radius: 4px;
+  background: #111;
+  color: var(--light-text);
+}
+
+.quote-form button {
+  display: block;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+.site-footer {
+  background: linear-gradient(135deg, #001f3f, #00ADEF);
+  color: var(--white);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.site-footer .footer-logo {
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+.site-footer a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--light-text);
+}
+
+.copyright {
+  color: var(--light-text);
+  margin-top: 20px;
+  font-size: 0.9em;
+}
